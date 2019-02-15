@@ -1,8 +1,4 @@
 /* Universal styling */
-html {
-
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -35,7 +31,6 @@ h3 {
   justify-content: space-between;
   width: 100%;
   height: 80px;
-  /* border: 1px solid red; */
   border-bottom: 1px solid black;
   font-family: Verdana;
   font-size: 14px;
@@ -69,7 +64,6 @@ h3 {
   flex-wrap: wrap;
   height: 80px;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .textlink {
@@ -99,12 +93,12 @@ main {
 
 .img-story {
   display: inline-flex;
-  /* border: 2px dashed green; */
   font-family: Georgia;
   font-weight: bold;
   color: white;
   height: 300px;
   text-align: center;
+  align-items: center;
 }
 
 
@@ -113,8 +107,8 @@ main {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* border: 5px solid purple; */
-  width: 630px;
+  justify-content: space-between;
+  min-width: 630px;
 }
 
 .main-story {
@@ -126,14 +120,15 @@ main {
 
 .main-story .img-story {
   background-image: url("../images/img-story-main.png");
-
+  text-align: left;
+  padding-left: 10px;
 }
 
 .story2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 48%;
 }
 
 .story2 .img-story {
@@ -144,7 +139,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 48%;
 }
 
 .story3 .img-story {
@@ -156,8 +151,7 @@ main {
 .column2 {
   display: flex;
   flex-direction: column;
-  /* border: 5px solid MediumAquamarine; */
-  width: 300px;
+  min-width: 300px;
   margin-left: 20px;
 }
 
@@ -171,8 +165,7 @@ main {
 .column3 {
   display: flex;
   flex-direction: column;
-  /* border: 5px solid green; */
-  width: 240px;
+  min-width: 240px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -193,3 +186,48 @@ main {
 
 
 /* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin-top: 100px;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  font-weight: normal;
+}
+
+.footer-row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-footer {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 3px solid white;
+  width: 100px;
+  height: 16px;
+  margin-right: 50px;
+}
+
+.footer-links {
+  display: inline-block;
+}
+
+.footer-row2 {
+  justify-content: center;
+}
