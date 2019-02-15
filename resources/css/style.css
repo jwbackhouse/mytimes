@@ -1,3 +1,5 @@
+/* Universal styling */
+
 html {
 
 }
@@ -7,13 +9,24 @@ a {
   color: inherit;
 }
 
+
+/* Nav bar styling */
+
+/* Nav container */
+
 .nav {
   display: inline-flex;
   align-items: center;
   width: 1200px;
   height: 80px;
   border-bottom: 1px solid black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
+
+
+/* Nav bar logo section */
 
 .logo {
   width: 20%;
@@ -21,11 +34,9 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .logo img {
-  /* border: 1px solid red; */
   padding-left: 0.5em;
 }
 
@@ -34,8 +45,11 @@ a {
   align-items: center;
   height: 50px;
   padding-left: 0.5em;
-  /* border: 1px solid red; */
+  color: MediumAquamarine
 }
+
+
+/* Nav bar links section */
 
 .links {
   display: inline-flex;
@@ -43,15 +57,14 @@ a {
   height: 80px;
   justify-content: flex-end;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .textlink {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   padding: 5px 10px;
+  line-height: 50px;
   height: 50px;
-  /* border: 1px solid red; */
   color: black;
   font-weight: bold;
+  text-decoration: underline;
 }
